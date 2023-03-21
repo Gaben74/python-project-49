@@ -18,8 +18,8 @@ https://api.codeclimate.com/v1/badges/bf830954ff51ca9d5eb9/maintainability
 5. Brain Prime - определение простого числа (Команда для запуска: brain-prime)
 
 ### Требования для установки:
-Python - Версия 3.10 или выше
-Poetry - Версия 1.4.0 или выше
+1. Python - Версия 3.10 или выше
+2. Poetry - Версия 1.4.0 или выше
 
 ### Установка:
 Классические команды:
