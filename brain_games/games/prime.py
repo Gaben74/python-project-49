@@ -12,7 +12,7 @@ def prime_check(number):
         return "no"
 
 
-RULES = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def brain_game():
