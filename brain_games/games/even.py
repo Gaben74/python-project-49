@@ -1,7 +1,7 @@
 import random
 
 
-RULES = 'Answer "yes" if number even otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def brain_game():
