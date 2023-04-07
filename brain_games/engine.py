@@ -11,10 +11,10 @@ def play(game):
     print(game.RULES)
 
     for x in range(ROUNDS):
-        cor_answer, question = game.brain_game()
+        cor_answer, question = game.play_game()
         print("Question:", question)
         answer = prompt.string("Your answer: ")
-        if str(cor_answer) != answer:
+        if cor_answer != answer:
             print(f"{answer} is wrong answer;(.Correct answer was", cor_answer)
             print(f"Let's try again, {name}!")
             break

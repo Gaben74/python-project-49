@@ -5,7 +5,7 @@ import math
 RULES = "Find the greatest common divisor of given numbers."
 
 
-def brain_game():
+def play_game():
     number1 = random.randint(1, 50)
     number2 = random.randint(1, 50)
     question = f"{number1} {number2}"

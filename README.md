@@ -21,15 +21,11 @@
 2. Poetry - Версия 1.4.0 или выше
 
 ### Установка:
-Классические команды:
-1. poetry install 
-2. poetry build 
-3. python3 -m pip install --user dist/*.whl
-
-Команды для Makefile:
-1. make install
-2. make build
-3. make package-install
+Сборка пакета и его установка(инструкция для конечного пользователя):
+1. poetry install(Makefile - make install) - первичная установка poetry и необходимых зависимостей;
+2. poetry build(Makefile - make build) - сборка пакета в системе;
+3. python3 -m pip install --user dist/*.whl(Makefile - make package-install) - установка пакета в систему;
+4. poetry run flake8 brain_games(Makefile - make lint) - запуск линтера *из корневой папки проекта.
 
 ### Демонстрационные материалы:
 1. Brain Even

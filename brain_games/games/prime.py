@@ -1,21 +1,22 @@
 import random
 
 
-def prime_check(number):
+def is_prime(number):
     i = 0
     for x in range(2, number // 2 + 1):
         if (number % x == 0):
             i += 1
     if i <= 0:
-        return "yes"
+        return True
     else:
-        return "no"
+        return False
 
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def brain_game():
+def play_game():
     question = random.randint(1, 50)
-    cor_answer = prime_check(question)
+    cor_answer = is_prime(question)
+    cor_answer = "yes" if cor_answer is True else "no"
     return cor_answer, question
