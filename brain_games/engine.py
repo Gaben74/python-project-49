@@ -11,11 +11,11 @@ def play(game):
     print(game.RULES)
 
     for x in range(ROUNDS):
-        answer, question = game.play_game()
+        cor_answer, question = game.play_game()
         print("Question:", question)
-        user_answer = prompt.string("Your answer: ")
-        if answer != user_answer:
-            print(f"{user_answer} is wrong answer;(.Correct answer was", answer)
+        answer = prompt.string("Your answer: ")
+        if cor_answer != answer:
+            print(f"{answer} is wrong answer;(.Correct answer was", cor_answer)
             print(f"Let's try again, {name}!")
             break
         print('Correct!')

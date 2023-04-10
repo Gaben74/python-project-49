@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -12,8 +12,8 @@ def is_even(number):
 
 
 def play_game():
-    random_number = randint(1, 100)
-    answer = is_even(random_number)
-    answer = "yes" if answer is True else "no"
+    random_number = random.randint(1, 100)
+    cor_answer = is_even(random_number)
+    cor_answer = "yes" if cor_answer is True else "no"
     question = str(random_number)
-    return answer, question
+    return cor_answer, question
